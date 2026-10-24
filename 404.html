@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#12141a" />
+    <link rel="icon" type="image/svg+xml" href="/pm-favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Source+Sans+3:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Page Not Found | Paz Mogrelia's Dev Portfolio</title>
+    <style>
+      :root {
+        --canvas: #f2f0eb;
+        --ink: #0c0b0a;
+        --muted: #b9b3aa;
+        --brass: #b8953c;
+        --night: #12141a;
+        --night-mid: #1a1d26;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        min-height: 100vh;
+        margin: 0;
+        display: grid;
+        place-items: center;
+        padding: clamp(1.25rem, 4vw, 3rem);
+        color: var(--canvas);
+        background:
+          radial-gradient(circle at 78% 18%, rgba(184, 149, 60, 0.18), transparent 30rem),
+          linear-gradient(135deg, var(--night), var(--night-mid));
+        font-family: "Source Sans 3", system-ui, sans-serif;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+      }
+
+      main {
+        width: min(100%, 720px);
+        border: 1px solid rgba(242, 240, 235, 0.12);
+        border-radius: 28px;
+        padding: clamp(1.4rem, 5vw, 3rem);
+        background: rgba(255, 255, 255, 0.045);
+        box-shadow: 0 24px 70px -28px rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(18px);
+      }
+
+      .eyebrow {
+        margin: 0 0 1rem;
+        color: var(--brass);
+        font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
+        font-size: 0.72rem;
+        font-weight: 700;
+        letter-spacing: 0.24em;
+        text-transform: uppercase;
+      }
+
+      h1 {
+        margin: 0;
+        font-family: "Bricolage Grotesque", system-ui, sans-serif;
+        font-size: clamp(3rem, 13vw, 7rem);
+        line-height: 0.9;
+        letter-spacing: -0.055em;
+      }
+
+      p {
+        max-width: 34rem;
+        margin: 1.35rem 0 0;
+        color: var(--muted);
+        font-size: clamp(1rem, 2vw, 1.15rem);
+        line-height: 1.65;
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.85rem;
+        margin-top: 2rem;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 44px;
+        border-radius: 999px;
+        padding: 0.8rem 1.15rem;
+        border: 1px solid rgba(242, 240, 235, 0.2);
+        color: var(--canvas);
+        font-family: ui-monospace, "Cascadia Code", "Segoe UI Mono", monospace;
+        font-size: 0.74rem;
+        font-weight: 700;
+        letter-spacing: 0.16em;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition:
+          border-color 180ms ease,
+          background 180ms ease,
+          color 180ms ease;
+      }
+
+      .button.primary {
+        border-color: transparent;
+        color: var(--ink);
+        background: var(--brass);
+      }
+
+      .button:hover {
+        border-color: rgba(242, 240, 235, 0.46);
+        background: rgba(255, 255, 255, 0.075);
+      }
+
+      .button.primary:hover {
+        color: var(--ink);
+        background: color-mix(in srgb, var(--brass) 88%, white);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">404 · Page not found</p>
+      <h1>Wrong turn.</h1>
+      <p>
+        This route does not exist on Paz Mogrelia's portfolio. Head back home,
+        or jump straight to the code/contact links.
+      </p>
+      <div class="actions" aria-label="404 navigation">
+        <a class="button primary" href="/">Back home</a>
+        <a class="button" href="https://github.com/pmogrelia">GitHub</a>
+        <a class="button" href="mailto:paz.mogrelia@gmail.com">Email</a>
+      </div>
+    </main>
+  </body>
+</html>
